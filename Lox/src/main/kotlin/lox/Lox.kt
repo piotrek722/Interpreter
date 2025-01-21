@@ -1,5 +1,6 @@
 package lox
 
+import lox.scanner.Scanner
 import java.io.BufferedReader
 import java.io.InputStreamReader
 import java.nio.charset.Charset

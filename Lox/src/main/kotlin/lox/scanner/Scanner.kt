@@ -1,6 +1,8 @@
-package lox
+package lox.scanner
 
 import lox.Lox.error
+import lox.Token
+import lox.TokenType
 import lox.TokenType.*
 
 
