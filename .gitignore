@@ -1,3 +1,4 @@
+*.iml
 .idea/
 Lox/build
 Lox/.gradle
