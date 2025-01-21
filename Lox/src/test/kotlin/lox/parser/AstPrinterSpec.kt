@@ -1,12 +1,9 @@
-package parsper
+package lox.parser
 
-import io.kotest.assertions.throwables.shouldNotThrow
 import io.kotest.core.spec.style.FunSpec
 import io.kotest.matchers.shouldBe
 import lox.Token
 import lox.TokenType
-import lox.parsper.*
-
 
 class AstPrinterSpec : FunSpec({
     test("should print AST tree") {
@@ -23,8 +20,9 @@ class AstPrinterSpec : FunSpec({
         )
         //when
         val result = AstPrinter().print(expression)
+        print(result)
 
         //then
-        result shouldBe "(*(-123) (group45.67))"
+        result shouldBe "(* (- 123) (group 45.67))"
     }
 })
