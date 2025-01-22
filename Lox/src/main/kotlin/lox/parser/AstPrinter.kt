@@ -1,6 +1,6 @@
 package lox.parser
 
-class AstPrinter {
+object AstPrinter {
 
     fun print(expr: Expr): String =
         when (expr) {
